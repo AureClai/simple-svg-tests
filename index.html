@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Tests</title>
+  </head>
+  <body>
+    <p id="display-coords">0,0</p>
+    <img
+      src="https://a.tile.openstreetmap.org/1/1/1.png"
+      alt="tile"
+      width="256"
+      height="256"
+      id="result-img"
+    />
+    <br />
+    <label for="lat">Lat</label>
+    <input name="lat" id="lat-input" type="number" step="any" />
+    <br />
+    <label for="lon">Lon</label>
+    <input name="lon" id="lon-input" type="number" step="any" />
+    <br />
+    <label for="zoom">Zoom</label>
+    <input
+      name="zoom"
+      id="zoom-input"
+      type="number"
+      step="1"
+      max="12"
+      min="1"
+    />
+    <button onclick="getTileButtonCallback()">GetTile</button>
+    <script src="app.js"></script>
+  </body>
+</html>
